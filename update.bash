@@ -1,14 +1,15 @@
 #!/bin/bash
 
-msg=$@
+asdf=$@
 
-if [[ $msg = "" ]]
+if [[ $@ = "" ]]
 then
-  msg=update website
+  asdf=update website
 fi
 
 git add -A
-git commit -m "update website"
-git commit -m \"$msg\"
+echo 1
+git commit -m \"$asdf\"
+echo 2
 git pull
 git push
