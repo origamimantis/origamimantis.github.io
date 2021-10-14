@@ -1,6 +1,6 @@
 #!/bin/bash
 
-asdf=$@
+asdf="$@"
 
 if [[ $@ = "" ]]
 then
@@ -8,8 +8,8 @@ then
 fi
 
 git add -A
-echo 1
-git commit -m \"$asdf\"
+echo $asdf
+git commit -m "$asdf"
 echo 2
 git pull
 git push
