@@ -1,0 +1,3 @@
+[submodule "loopychess"]
+	path = loopychess
+	url = git@github.com:origamimantis/loopychess.git
