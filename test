@@ -1,5 +1,8 @@
 #!/bin/bash
 
 
+pushd pictures
 python3.7 addimgs.py
+popd pictures
+
 python3.7 -m http.server --directory . 9476
