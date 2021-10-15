@@ -40,7 +40,7 @@
       [
 	{
 	  "src" : "detect.png",
-	  "txt" : "I went to SJTU to research \"autonomous quadrotor landing on a moving platform\", which was about using computer vision to detect landing platforms for a drone. This was were my labmate and I were learning object detection algorithms. My program here is actually severely flawed; rather than finding objects. it just looks for pixel values close to a target color!"
+	  "txt" : "I went to SJTU to research \"autonomous quadrotor landing on a moving platform\", which was about using computer vision to detect landing platforms for a drone. This was were my labmate and I were learning object detection algorithms. My program here is actually severely flawed; rather than finding objects, it just looks for pixel values close to a target color, and draws a box around the most concentrated place!"
 	},
 	{
 	  "src" : "drone.jpg",
