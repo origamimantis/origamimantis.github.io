@@ -4,7 +4,8 @@ msg="$@"
 
 if [[ $msg = "" ]]
 then
-  msg=update website
+  msg="update website"
+  echo $msg
 fi
 
 python3.7 addimgs.py
