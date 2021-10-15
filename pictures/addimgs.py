@@ -2,7 +2,7 @@ import json
 
 
 jj = None
-with open("imgs.json") as the_file:
+with open("pictures/imgs.json") as the_file:
     jj = json.load(the_file)
 
 slidelist = jj["stuff"]
@@ -84,7 +84,7 @@ for i,slide in enumerate(slidelist):
     s = (   f'  {date}<br>\n'
             f'  {titlecaption}<br>\n'
             f'  <div class="slideshow-container">\n'
-            f'    <div id="mySlides{i}">\n')
+            f'    <div id="slide{i}">\n')
 
     for j, img in enumerate(slide["imgs"]):
         s += (
@@ -101,13 +101,12 @@ for i,slide in enumerate(slidelist):
     s += (  f'  </div>\n'
             f'  <br>\n'
             f'  <br>\n')
-            #f'  <div style="width:{imgw}; height:{imgh}"></div>\n')
 
     html.append(s)
 
 html.append(f'</div>\n')
 html.append(f'<script src="slide_control.js"></script>\n')
 
-with open("pictures.html", "w") as added:
+with open("pictures/index.html", "w") as added:
     for s in html:
         added.write(s)
