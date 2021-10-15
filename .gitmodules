@@ -1,3 +1,6 @@
 [submodule ".loopychess"]
 	path = .loopychess
 	url = https://github.com/origamimantis/loopychess.git
+[submodule "_loopychess-git"]
+	path = _loopychess-git
+	url = https://github.com/origamimantis/loopychess.git
