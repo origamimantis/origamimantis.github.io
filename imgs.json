@@ -40,22 +40,18 @@
       [
 	{
 	  "src" : "detect.png",
-	  "txt" : "bad"
+	  "txt" : "I went to SJTU to research \"autonomous quadrotor landing on a moving platform\", which was about using computer vision to detect landing platforms for a drone. This was were my labmate and I were learning object detection algorithms. My program here is actually severely flawed; rather than finding objects. it just looks for pixel values close to a target color!"
 	},
 	{
 	  "src" : "drone.jpg",
-	  "txt" : "woah"
+	  "txt" : "Flying the drone using its normal remote control. This was to get used to drone movement before going hands-off."
 	},
 	{
 	  "src" : "drone2.png",
-	  "txt" : "my back"
+	  "txt" : "Flying a drone by connecting to it with my laptop. This was done is something called ROS (Robot Operating System). It works using a publisher-subscriber architecture: the drone subscribed to my program, and my program would publish commands that the drone would follow. The drone was crashed many times."
 	}
       ]
     }
-
-
-
-
 
 
   ]
