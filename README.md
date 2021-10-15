@@ -1,3 +1,3 @@
 free website good
 
-<origamimantis.github.io>
+<https://origamimantis.github.io>
