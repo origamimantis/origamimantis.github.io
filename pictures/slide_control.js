@@ -1,25 +1,39 @@
+let nslides = null;
+let slideValue = null;
+let slideContent = null;
 
-let nslides = document.getElementsByClassName("slideshow-container").length;
-let slideIndex = new Array(nslides).fill(1);
+function setup_slide_control()
+{
+  nslides = document.getElementsByClassName("slideshow-container").length;
+  slideValue = new Array(nslides).fill(0);
+  slideContent = []
 
-for (let i = 0; i < nslides; ++i)
-  showSlides(1, i);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+  for (let i = 0; i < nslides; ++i)
+  {
+    slideContent.push( document.getElementById("slide" + i).children )
+    updateSlide(i);
+  }
 }
 
-function showSlides(n, no) {
-  let x = document.getElementById("slide" + no).children;
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (let i = 0; i < x.length; i++) {
+function shiftSlide(shift, slide)
+{
+  let x = slideContent[slide]
 
-    for (let c of x[i].children)
+  slideValue[slide] = (x.length + slideValue[slide] + shift) % x.length
+
+  updateSlide(slide);
+}
+
+function updateSlide(slide)
+{
+  x = slideContent[slide];
+
+  for (let s of x)
+  {
+    for (let c of s.children)
       c.style.display = "none";  
-
   }
 
-  for (let c of x[slideIndex[no]-1].children)
+  for (let c of x[slideValue[slide]].children)
     c.style.display = "inline-block";  
 }

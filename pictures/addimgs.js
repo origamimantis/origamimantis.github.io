@@ -72,7 +72,7 @@ window.onload = () =>
   {
       date = slide["date"]
       titlecaption = slide["txt"]
-      html.push(    '  ' + date + '<br>\n')
+      html.push('  ' + date + '<br>\n')
       html.push('  '+titlecaption+'<br>\n')
       html.push('  <div class="slideshow-container">\n')
       html.push('    <div id="slide' + i + '">\n')
@@ -89,8 +89,8 @@ window.onload = () =>
       html.push(    '    </div>\n')
       if (slide["imgs"].length > 1)
       {
-	  html.push('    <a class="prev" onclick="plusSlides(-1, '+i+')">&#10094;</a>\n')
-	  html.push('    <a class="next" onclick="plusSlides(1, '+i+')">&#10095;</a>\n')
+	  html.push('    <a class="prev" onclick="shiftSlide(-1, '+i+')">&#10094;</a>\n')
+	  html.push('    <a class="next" onclick="shiftSlide(1, '+i+')">&#10095;</a>\n')
       }
 
       html.push('  </div>\n')
@@ -98,12 +98,12 @@ window.onload = () =>
       html.push('  <br>\n')
   });
 
-  html.push( '</div>\n')
-  html.push( '<script src="slide_control.js"></script>\n')
 
 
   el = document.head
   el.innerHTML += style.join("")
   el = document.getElementById("all-slides")
   el.innerHTML = html.join("")
+
+  setup_slide_control();
 };
