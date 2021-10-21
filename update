@@ -7,8 +7,6 @@ then
   msg="update website"
 fi
 
-python3.7 pictures/addimgs.py
-
 git add -A
 git commit -m "$msg"
 git pull
