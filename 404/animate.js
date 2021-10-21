@@ -60,7 +60,6 @@ function mainloop()
       o.draw(can, ctx)
     });
   }
-  console.log(stuff.size)
 }
 
 document.onmousemove = (e) =>
