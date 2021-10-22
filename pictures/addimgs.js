@@ -33,6 +33,7 @@ window.onload = () =>
   style.push( '        overflow: hidden;\n')
   style.push( '        display: inline-block;\n')
   style.push( '        object-fit: cover;\n')
+  style.push( '        border:1px solid black;\n')
   style.push( '}\n')
   style.push( '.imgtext {\n')
   style.push( '        display: inline-block;\n')
