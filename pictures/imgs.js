@@ -49,7 +49,7 @@ let stuff = {
 
     {
       "date" : "Jan 2021 - May 2021.",
-      "txt" : "Research at UCI's Mobley Lab",
+      "txt" : "Research at the Mobley Lab @ UCI",
       "imgs" :
       [
 	{
