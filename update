@@ -1,10 +1,10 @@
 #!/bin/bash
 
-msg="$@"
+msg=""
 
-if [[ $msg = "" ]]
+if [[ $1 ]]
 then
-  msg="update website"
+  msg="$@"
 fi
 
 git add -A
