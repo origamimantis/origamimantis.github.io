@@ -1,3 +1,9 @@
 [submodule "_loopychess-git"]
 	path = _loopychess-git
 	url = https://github.com/origamimantis/loopychess.git
+[submodule "tree-simulator"]
+	path = tree-simulator
+	url = git@github.com:origamimantis/tree-simulator.git
+[submodule "_tree-simulator-git"]
+	path = _tree-simulator-git
+	url = git@github.com:origamimantis/tree-simulator.git
