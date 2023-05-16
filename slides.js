@@ -1,7 +1,7 @@
 let slidelist = [
 
     {
-      "img" : "heroku.png",
+      "img" : "slides/heroku.png",
       "txt" : "Me having to find a new place to host my portfolio demos after Heroku got rid of its free plan (circa 2022, grayscale)"
     },
     {
