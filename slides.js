@@ -30,7 +30,7 @@ let slidelist = [
     },
     {
       "img" : "reader_33.png",
-      "txt" : "ICS33 reader at UCI in 2019. This was the picture used on the class website. Unfortunately, the work was mind-meltingly boring.",
+      "txt" : "ICS33 reader at UCI in 2019. This was the picture used on the class website.",
     },
     {
       "img" : "slides/drone.jpg",
