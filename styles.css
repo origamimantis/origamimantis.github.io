@@ -1,0 +1,12 @@
+@font-face {
+font-family: "Computer Modern";
+src: url('./fonts/cmunrm.ttf') format('trueType');
+}
+body
+{
+    font-family: "Courier New";
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:visited { color: blue; }
+
